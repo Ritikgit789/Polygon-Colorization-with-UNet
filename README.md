@@ -23,6 +23,8 @@ Fixes Attempted:
 - Data Quality Fix: An initial failure to generate a specific color was traced back to a missing data point in the training set. This was a critical learning moment that highlighted the importance of a clean and complete dataset.
 - Final Output Trends: After implementing the fixes, the training dynamics improved significantly. The model showed a consistent decrease in both training and validation loss. Qualitatively, the output images evolved from blurry, incorrectly colored shapes to sharp, perfectly colored polygons, demonstrating that the model was successfully learning both shape and color simultaneously.
 
+![Architecture Diagram](Train_loss.png)
+
 ## Key Learnings
 -- Importance of Data: A critical learning was the impact of data quality on model performance. An initial failure to generate a specific color was traced back to a missing data point in the training set, highlighting that a model is only as good as its data.
 
