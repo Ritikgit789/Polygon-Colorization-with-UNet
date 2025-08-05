@@ -8,7 +8,7 @@ The model is based on a UNet architecture, a powerful choice for image-to-image 
 -- UNet Structure: The model consists of a symmetric encoder-decoder path with a bottleneck layer. The encoder uses a series of DoubleConv and MaxPool2d layers to downsample the input image, extracting high-level features. The decoder uses Upsample and DoubleConv layers to reconstruct the output image. Crucially, skip connections from the encoder's feature maps are concatenated with the decoder's upsampled feature maps at each level, ensuring the final output retains fine-grained spatial details.
 -- Conditional Injection: To condition the UNet on a specific color, a unique conditioning method was implemented. A color name (e.g., "blue") was converted into a one-hot vector and then into a 64-dimensional embedding using an nn.Linear layer. This color embedding was then tiled and concatenated with the feature maps at every upsampling stage of the decoder. This provided a strong, persistent signal, guiding the model's color generation throughout the reconstruction process.
 
-
+![Architecture Diagram](Architecture_UNET.png)
 
 ## Training Dynamics
 
