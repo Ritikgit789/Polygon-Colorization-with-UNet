@@ -45,7 +45,7 @@ def main(config):
     # Initialize wandb for experiment tracking and logging
     # wandb.init(project="unet-polygon-colorizer", config=config)
     # 'My_First_Training' 
-    wandb.init(project="unet-polygon-colorizer", config=config, name="UNET_Training")
+    wandb.init(project="unet-polygon-colorizer", config=config, name="UNET_Training_final_updated")
 
     # Set up the device for training (GPU if available, otherwise CPU)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
